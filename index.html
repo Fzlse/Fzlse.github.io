@@ -94,7 +94,7 @@
         <p data-lang-id="proj-koper">
           Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.
         </p>
-        <a href="https://radenharza.itch.io/koper-pulang" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+        <a href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer" data-lang-id="proj-detail" onclick="window.open(this.href, '_blank'); return false;">Lihat detail →</a>
       </div>
 
       <div class="project-card reveal">
@@ -124,7 +124,7 @@
         <p data-lang-id="proj-bikend">
           Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.
         </p>
-        <a href="https://fzlse.itch.io/zera-venture" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+        <a href="https://github.com/Syafiqqand/Biken" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
       </div>
 
     </div>
@@ -135,10 +135,10 @@
       <h2 class="section-title" data-lang-id="contact-title">Kontak & Media Sosial</h2>
       <p class="muted" data-lang-id="contact-desc">Silakan hubungi saya melalui salah satu kanal berikut:</p>
       <div class="contact-links">
-        <a href="mailto:andratml3@gmail.com">Email</a>
+        <a href="mailto:andratml3@gmail.com" id="emailLink">Email</a>
         <a href="https://github.com/Fzlse" target="_blank">GitHub</a>
         <a href="https://fzlse.itch.io" target="_blank">Itch.io</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/muhammad-andra-ramadhani-334694357/" target="_blank">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -244,6 +244,68 @@
       langToggle.textContent = currentLang === 'id' ? 'EN' : 'ID';
       document.documentElement.lang = currentLang;
     });
+
+    // make entire project-card clickable: open the project's anchor (respecting its target)
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      const link = card.querySelector('a[href]');
+      if (!link) return;
+      // show affordance
+      card.style.cursor = 'pointer';
+
+      card.addEventListener('click', (e) => {
+        // If the real anchor or a button was clicked, let the default behavior happen.
+        if (e.target.closest('a') || e.target.closest('button')) return;
+
+        const href = link.href;
+        const target = link.target || '_self';
+        if (!href) return;
+
+        if (target === '_blank') {
+          // open in new tab/window and use noopener for safety
+          window.open(href, '_blank', 'noopener');
+        } else {
+          // open in same tab
+          window.location.href = href;
+        }
+      });
+
+      // keyboard accessibility: open on Enter when card is focused
+      card.tabIndex = card.tabIndex || 0;
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const href = link.href;
+          const target = link.target || '_self';
+          if (target === '_blank') window.open(href, '_blank', 'noopener');
+          else window.location.href = href;
+        }
+      });
+    });
+
+    // open Gmail compose when user clicks the Email link (prefill recipient)
+    // Note: Browsers cannot programmatically "send" an email on behalf of the user
+    // without server-side access and proper OAuth. This only opens Gmail's compose
+    // window (or the default mail client via mailto if the user prefers).
+    const emailLink = document.getElementById('emailLink');
+    if (emailLink) {
+      emailLink.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const to = 'andratml3@gmail.com';
+        // You can customize subject/body here or collect from a contact form
+        const subject = '';
+        const body = '';
+
+        // Gmail compose URL (opens compose in Gmail web UI)
+        const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1'
+          + '&to=' + encodeURIComponent(to)
+          + '&su=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(body);
+
+        // Open in new tab. If user isn't signed into Gmail, they will be prompted to sign in.
+        window.open(gmailUrl, '_blank', 'noopener');
+      });
+    }
   </script>
 
 </body>
