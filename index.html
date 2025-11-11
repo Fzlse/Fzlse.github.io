@@ -77,55 +77,55 @@
     </p>
     <div class="projects-grid">
 
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" rel="noopener noreferrer">
         <img src="images/avatar.png" alt="Project Avatar" class="project-img">
         <small>Unity • Platformer</small>
         <h3>Project Avatar</h3>
         <p data-lang-id="proj-avatar">
           Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti dan pengaturan mekanik permainan.
         </p>
-        <a href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
-      </div>
+        <span data-lang-id="proj-detail">Lihat detail →</span>
+      </a>
 
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer">
         <img src="images/koper.png" alt="Koper Pulang" class="project-img">
         <small>Unity • Puzzle</small>
         <h3>Koper Pulang</h3>
         <p data-lang-id="proj-koper">
           Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.
         </p>
-        <a href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer" data-lang-id="proj-detail" onclick="window.open(this.href, '_blank'); return false;">Lihat detail →</a>
-      </div>
+        <span data-lang-id="proj-detail">Lihat detail →</span>
+      </a>
 
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://radenharza.itch.io/beringin" target="_blank" rel="noopener noreferrer">
         <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img">
         <small>Unity • Narrative</small>
         <h3>Ber-Ingin</h3>
         <p data-lang-id="proj-beringin">
           Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, quest, dan interaksi objek dinamis.
         </p>
-        <a href="https://radenharza.itch.io/beringin" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
-      </div>
+        <span data-lang-id="proj-detail">Lihat detail →</span>
+      </a>
 
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://fzlse.itch.io/zera-venture" target="_blank" rel="noopener noreferrer">
         <img src="images/zera.png" alt="Zera Venture" class="project-img">
         <small>Unity • Idle Game</small>
         <h3>Zera Venture</h3>
         <p data-lang-id="proj-zera">
           Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan sebagai media untuk memahami alur ekonomi sederhana dalam game.
         </p>
-        <a href="https://fzlse.itch.io/zera-venture" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
-      </div>
+        <span data-lang-id="proj-detail">Lihat detail →</span>
+      </a>
 
-      <div class="project-card reveal">
+      <a class="project-card reveal" href="https://github.com/Syafiqqand/Biken" target="_blank" rel="noopener noreferrer">
         <img src="images/bikend.png" alt="Bikend" class="project-img">
         <small>Unity • Turn Based Tactical • On-going</small>
         <h3>Bikend</h3>
         <p data-lang-id="proj-bikend">
           Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.
         </p>
-        <a href="https://github.com/Syafiqqand/Biken" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
-      </div>
+        <span data-lang-id="proj-detail">Lihat detail →</span>
+      </a>
 
     </div>
   </section>
@@ -245,42 +245,7 @@
       document.documentElement.lang = currentLang;
     });
 
-    // make entire project-card clickable: open the project's anchor (respecting its target)
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-      const link = card.querySelector('a[href]');
-      if (!link) return;
-      // show affordance
-      card.style.cursor = 'pointer';
-
-      card.addEventListener('click', (e) => {
-        // If the real anchor or a button was clicked, let the default behavior happen.
-        if (e.target.closest('a') || e.target.closest('button')) return;
-
-        const href = link.href;
-        const target = link.target || '_self';
-        if (!href) return;
-
-        if (target === '_blank') {
-          // open in new tab/window and use noopener for safety
-          window.open(href, '_blank', 'noopener');
-        } else {
-          // open in same tab
-          window.location.href = href;
-        }
-      });
-
-      // keyboard accessibility: open on Enter when card is focused
-      card.tabIndex = card.tabIndex || 0;
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          const href = link.href;
-          const target = link.target || '_self';
-          if (target === '_blank') window.open(href, '_blank', 'noopener');
-          else window.location.href = href;
-        }
-      });
-    });
+    // project cards are now native <a> elements; no JS click handler needed
 
     // open Gmail compose when user clicks the Email link (prefill recipient)
     // Note: Browsers cannot programmatically "send" an email on behalf of the user
