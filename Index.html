@@ -10,116 +10,132 @@
 
   <header>
     <nav>
-      <div class="logo">Muhammad Andra Ramadhani Portofolio</div>
-      <div>
-        <a href="#about">Tentang</a>
-        <a href="#projects">Projek</a>
-        <a href="#contact">Kontak</a>
+      <div class="logo" data-lang-id="site-title">Portofolio Muhammad Andra Ramadhani</div>
+      <div class="nav-links">
+        <a href="#about" data-lang-id="nav-about">Tentang</a>
+        <a href="#projects" data-lang-id="nav-projects">Proyek</a>
+        <a href="#contact" data-lang-id="nav-contact">Kontak</a>
       </div>
+      <button class="lang-toggle" id="langToggle">EN</button>
     </nav>
   </header>
 
   <section class="hero" id="top">
-    <div>
-      <div class="hero-tag">Hi Saya Andra</div>
-      <h1>Mahasiswa GT & Game Programmer</h1>
-      <p> Saya fokus pada pengembangan game menggunakan Unity dan C#. </p>
+    <div class="hero-left">
+      <div class="hero-tag" data-lang-id="hero-tag">Halo, saya Andra</div>
+      <h1 data-lang-id="hero-title">Game Programmer & Mahasiswa Game Technology</h1>
+      <p data-lang-id="hero-desc">
+        Saya berfokus pada pengembangan game menggunakan Unity dan C#. Saya tertarik pada sistem gameplay, mekanika interaktif, serta optimalisasi performa game.
+      </p>
       <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">Lihat Projek</a>
-        <a href="#contact" class="btn-secondary">Kontak</a>
+        <a href="#projects" class="btn-primary" data-lang-id="btn-projects">Lihat Proyek</a>
+        <a href="#contact" class="btn-secondary" data-lang-id="btn-contact">Hubungi Saya</a>
       </div>
     </div>
-    <div class="hero-card">
-      <h2>Skill</h2>
+    <div class="hero-card float-in">
+      <h2 data-lang-id="skill-title">Keahlian Utama</h2>
       <div class="stat-list">
         <div class="stat">
-          <div class="label">Unity</div>
-          <div class="value">2D/3D</div>
+          <div class="label" data-lang-id="skill-1-label">Engine</div>
+          <div class="value">Unity (2D/3D)</div>
         </div>
         <div class="stat">
-          <div class="label">Role</div>
-          <div class="value">Game Programmer</div>
+          <div class="label" data-lang-id="skill-2-label">Peran</div>
+          <div class="value" data-lang-id="skill-2-value">Game Programmer</div>
         </div>
         <div class="stat">
-          <div class="label">Skill</div>
-          <div class="value">c#, c++</div>
+          <div class="label" data-lang-id="skill-3-label">Bahasa</div>
+          <div class="value">C#, C++</div>
         </div>
       </div>
-      <p class="muted small"></p>
     </div>
   </section>
 
   <section id="about">
-    <div class="about">
-      <h2 class="section-title">Tentang Aku</h2>
-      <p class="muted">
-        Nama lengkap: <strong>Muhammad Andra Ramadhani</strong>. Saya adalah mahasiswa GT dan saya memiliki Role sebagai Game Programmer. Saya memiliki minat yang besar dalam pengembangan game, terutama menggunakan Unity dan C#.
+    <div class="about fade-section">
+      <h2 class="section-title" data-lang-id="about-title">Tentang Saya</h2>
+      <p class="muted" data-lang-id="about-desc">
+        Nama saya <strong>Muhammad Andra Ramadhani</strong>, seorang mahasiswa Game Technology dengan spesialisasi sebagai <em>Game Programmer</em>. Saya memiliki ketertarikan tinggi terhadap pengembangan sistem permainan, AI sederhana, dan integrasi data menggunakan Unity dan C#. Saya juga aktif mengerjakan berbagai proyek kolaboratif untuk memperdalam pemahaman tentang pengembangan game secara profesional.
       </p>
     </div>
 
-    <h3 class="section-title">Skill & Tools</h3>
+    <h3 class="section-title" data-lang-id="skilltools-title">Kemampuan & Perangkat yang Dikuasai</h3>
+    <p class="muted" data-lang-id="skilltools-desc">
+      Berikut beberapa teknologi dan alat yang sering saya gunakan dalam pengembangan game:
+    </p>
     <div class="skills-grid">
-      <span class="skill-pill">Unity</span>
-      <span class="skill-pill">C#</span>
+      <span class="skill-pill">Unity Engine</span>
+      <span class="skill-pill">C# Programming</span>
       <span class="skill-pill">Git & GitHub</span>
     </div>
   </section>
 
- <section id="projects">
-  <h2 class="section-title">My Project</h2>
-  <p class="muted">Berikut adalah beberapa project yang sudah saya kerjakan.</p>
-  <div class="projects-grid">
+  <section id="projects">
+    <h2 class="section-title" data-lang-id="projects-title">Proyek Saya</h2>
+    <p class="muted" data-lang-id="projects-desc">
+      Beberapa proyek berikut merupakan hasil pembelajaran dan eksplorasi saya dalam pengembangan game menggunakan Unity.
+    </p>
+    <div class="projects-grid">
 
-    <div class="project-card">
-      <img src="images/avatar.png" alt="Project Avatar" class="project-img">
-      <small>Unity • Platformer</small>
-      <h3>Project Avatar</h3>
-      <p>Game 2D endless runner yang memiliki mekanik jump, dash, dan shooting. Saya berperan untuk membuat sistem dan mekanik dalam game tersebut.</p>
-      <a href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank">Cek Detail →</a>
+      <div class="project-card reveal">
+        <img src="images/avatar.png" alt="Project Avatar" class="project-img">
+        <small>Unity • Platformer</small>
+        <h3>Project Avatar</h3>
+        <p data-lang-id="proj-avatar">
+          Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti dan pengaturan mekanik permainan.
+        </p>
+        <a href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="images/koper.png" alt="Koper Pulang" class="project-img">
+        <small>Unity • Puzzle</small>
+        <h3>Koper Pulang</h3>
+        <p data-lang-id="proj-koper">
+          Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.
+        </p>
+        <a href="https://radenharza.itch.io/koper-pulang" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img">
+        <small>Unity • Narrative</small>
+        <h3>Ber-Ingin</h3>
+        <p data-lang-id="proj-beringin">
+          Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, quest, dan interaksi objek dinamis.
+        </p>
+        <a href="https://radenharza.itch.io/beringin" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="images/zera.png" alt="Zera Venture" class="project-img">
+        <small>Unity • Idle Game</small>
+        <h3>Zera Venture</h3>
+        <p data-lang-id="proj-zera">
+          Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan sebagai media untuk memahami alur ekonomi sederhana dalam game.
+        </p>
+        <a href="https://fzlse.itch.io/zera-venture" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+      </div>
+
+      <div class="project-card reveal">
+        <img src="images/bikend.png" alt="Bikend" class="project-img">
+        <small>Unity • Turn Based Tactical • On-going</small>
+        <h3>Bikend</h3>
+        <p data-lang-id="proj-bikend">
+          Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.
+        </p>
+        <a href="https://fzlse.itch.io/zera-venture" target="_blank" data-lang-id="proj-detail">Lihat detail →</a>
+      </div>
+
     </div>
-
-    <div class="project-card">
-      <img src="images/koper.png" alt="Koper Pulang" class="project-img">
-      <small>Unity • Puzzle</small>
-      <h3>Koper Pulang</h3>
-      <p>Game menata barang di koper menggunakan raycast dan grid untuk menata barang di koper.</p>
-      <a href="https://radenharza.itch.io/koper-pulang" target="_blank">Cek Detail →</a>
-    </div>
-
-    <div class="project-card">
-      <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img">
-      <small>Unity • Narrative</small>
-      <h3>Ber-Ingin</h3>
-      <p>Game 2D naratif bergaya side-scrolling. Saya mengerjakan sistem dialog, quest, dan interaksi objek.</p>
-      <a href="https://radenharza.itch.io/beringin">Cek Detail →</a>
-    </div>
-
-    <div class="project-card">
-      <img src="images/zera.png" alt="Zera Venture" class="project-img">
-      <small>Unity • Idle Game</small>
-      <h3>Zera Venture</h3>
-      <p>Adalah game pertama saya tentang seorang mahasiswa IT bernama Zera yang sedang menjual game dengan mekanik idle tycoon.</p>
-      <a href="https://fzlse.itch.io/zera-venture">Cek Detail →</a>
-    </div>
-
-    <div class="project-card">
-      <img src="images/bikend.png" alt="bikend" class="project-img">
-      <small>Unity • Turn Based Tactical • Ongoing</small>
-      <h3>Bikend</h3>
-      <p>Game strategi berbasis giliran yang menguji kemampuan taktis pemain dalam mengatur unit dan sumber daya.</p>
-      <a href="https://fzlse.itch.io/zera-venture">Cek Detail →</a>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
   <section id="contact">
-    <div class="contact-box">
-      <h2 class="section-title">Kontak & Sosmed</h2>
-      <p class="muted">Feel free to contact me</p>
+    <div class="contact-box fade-section">
+      <h2 class="section-title" data-lang-id="contact-title">Kontak & Media Sosial</h2>
+      <p class="muted" data-lang-id="contact-desc">Silakan hubungi saya melalui salah satu kanal berikut:</p>
       <div class="contact-links">
-        <a href="andratml3@gmail.com">Email</a>
+        <a href="mailto:andratml3@gmail.com">Email</a>
         <a href="https://github.com/Fzlse" target="_blank">GitHub</a>
         <a href="https://fzlse.itch.io" target="_blank">Itch.io</a>
         <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
@@ -130,6 +146,105 @@
   <footer>
     © 2025 Muhammad Andra Ramadhani. All rights reserved.
   </footer>
+
+  <script>
+    // scroll reveal sederhana
+    const reveals = document.querySelectorAll('.reveal, .fade-section');
+    const onScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < trigger) el.classList.add('show');
+      });
+    };
+    document.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // toggle bahasa
+    const langToggle = document.getElementById('langToggle');
+    let currentLang = 'id';
+
+    const langMap = {
+      id: {
+        "site-title": "Portofolio Muhammad Andra Ramadhani",
+        "nav-about": "Tentang",
+        "nav-projects": "Proyek",
+        "nav-contact": "Kontak",
+        "hero-tag": "Halo, saya Andra",
+        "hero-title": "Game Programmer & Mahasiswa Game Technology",
+        "hero-desc": "Saya berfokus pada pengembangan game menggunakan Unity dan C#. Saya tertarik pada sistem gameplay, mekanika interaktif, serta optimalisasi performa game.",
+        "btn-projects": "Lihat Proyek",
+        "btn-contact": "Hubungi Saya",
+        "skill-title": "Keahlian Utama",
+        "skill-1-label": "Engine",
+        "skill-2-label": "Peran",
+        "skill-2-value": "Game Programmer",
+        "skill-3-label": "Bahasa",
+        "about-title": "Tentang Saya",
+        "about-desc": "Nama saya <strong>Muhammad Andra Ramadhani</strong>, seorang mahasiswa Game Technology dengan spesialisasi sebagai <em>Game Programmer</em>. Saya memiliki ketertarikan tinggi terhadap pengembangan sistem permainan, AI sederhana, dan integrasi data menggunakan Unity dan C#. Saya juga aktif mengerjakan berbagai proyek kolaboratif untuk memperdalam pemahaman tentang pengembangan game secara profesional.",
+        "skilltools-title": "Kemampuan & Perangkat yang Dikuasai",
+        "skilltools-desc": "Berikut beberapa teknologi dan alat yang sering saya gunakan dalam pengembangan game:",
+        "projects-title": "Proyek Saya",
+        "projects-desc": "Beberapa proyek berikut merupakan hasil pembelajaran dan eksplorasi saya dalam pengembangan game menggunakan Unity.",
+        "proj-avatar": "Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti dan pengaturan mekanik permainan.",
+        "proj-koper": "Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.",
+        "proj-beringin": "Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, quest, dan interaksi objek dinamis.",
+        "proj-zera": "Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan sebagai media untuk memahami alur ekonomi sederhana dalam game.",
+        "proj-bikend": "Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.",
+        "proj-detail": "Lihat detail →",
+        "contact-title": "Kontak & Media Sosial",
+        "contact-desc": "Silakan hubungi saya melalui salah satu kanal berikut:"
+      },
+      en: {
+        "site-title": "Portfolio of Muhammad Andra Ramadhani",
+        "nav-about": "About",
+        "nav-projects": "Projects",
+        "nav-contact": "Contact",
+        "hero-tag": "Hi, I'm Andra",
+        "hero-title": "Game Programmer & Game Technology Student",
+        "hero-desc": "I focus on game development using Unity and C#. I'm interested in gameplay systems, interactive mechanics, and game performance optimization.",
+        "btn-projects": "View Projects",
+        "btn-contact": "Contact Me",
+        "skill-title": "Core Skills",
+        "skill-1-label": "Engine",
+        "skill-2-label": "Role",
+        "skill-2-value": "Game Programmer",
+        "skill-3-label": "Languages",
+        "about-title": "About Me",
+        "about-desc": "My name is <strong>Muhammad Andra Ramadhani</strong>, a Game Technology student specializing as a <em>Game Programmer</em>. I have a strong interest in building game systems, simple AI, and data integration using Unity and C#. I also actively work on collaborative projects to gain more experience in professional game development.",
+        "skilltools-title": "Skills & Tools",
+        "skilltools-desc": "Here are several technologies and tools I frequently use in game development:",
+        "projects-title": "My Projects",
+        "projects-desc": "The following projects are the result of my learning process and exploration in developing games with Unity.",
+        "proj-avatar": "A 2D endless runner with jump, dash, and shooting mechanics. I was responsible for core system development and gameplay mechanics setup.",
+        "proj-koper": "An interactive puzzle game where players arrange items inside a suitcase using raycast and grid systems. I implemented the placement system and object interactions.",
+        "proj-beringin": "A 2D narrative side-scrolling game focusing on story and character interactions. I developed the dialogue, quest, and interactive object systems.",
+        "proj-zera": "A simple idle tycoon game about an IT student building a game studio. I used this project to explore basic economic loops in games.",
+        "proj-bikend": "A turn-based tactical game that emphasizes unit management and resource planning. I serve as the main programmer for battle systems and gameplay logic.",
+        "proj-detail": "View details →",
+        "contact-title": "Contact & Socials",
+        "contact-desc": "You can reach me through the following channels:"
+      }
+    };
+
+    function applyLang(lang) {
+      const elements = document.querySelectorAll('[data-lang-id]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-lang-id');
+        const str = langMap[lang][key];
+        if (str !== undefined) {
+          el.innerHTML = str;
+        }
+      });
+    }
+
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'id' ? 'en' : 'id';
+      applyLang(currentLang);
+      langToggle.textContent = currentLang === 'id' ? 'EN' : 'ID';
+      document.documentElement.lang = currentLang;
+    });
+  </script>
 
 </body>
 </html>
