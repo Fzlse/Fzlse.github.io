@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portofolio - Muhammad Andra Ramadhani</title>
   <link rel="stylesheet" href="style.css">
+    <style>
+      /* Theme variables */
+      :root{
+        --accent-color: #0b5fff; /* change this to the color you want */
+        --accent-hover: #084ed1;
+        --muted-text: #6b7280;
+        --body-text: #111827;
+      }
+
+      /* Minimal modal styles (small, non-breaking) */
+      .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display:none; align-items:center; justify-content:center; z-index:9999; }
+      .modal { background:#fff; width:min(900px,92%); max-height:90vh; overflow:auto; border-radius:8px; padding:18px; box-shadow:0 10px 30px rgba(0,0,0,0.3); }
+      .modal-header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+      .modal-header h3{ margin:0; color:var(--accent-color); font-size:1.25rem; }
+      .modal-close{background:transparent;border:0;font-size:20px;cursor:pointer}
+      .modal-body{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px}
+      .modal-body img{width:320px;max-width:100%;border-radius:6px}
+      .modal-meta{flex:1;min-width:200px}
+      #modalDesc{ color: var(--muted-text); line-height:1.6 }
+      .project-external-link{display:inline-block;margin-top:12px;padding:8px 12px;background:var(--accent-color);color:#fff;border-radius:6px;text-decoration:none}
+      .project-external-link:hover{ background:var(--accent-hover) }
+      .project-external{ color:var(--accent-color); text-decoration:none; font-weight:600 }
+      .project-external:hover{ text-decoration:underline }
+      @media (max-width:600px){ .modal-body{flex-direction:column} }
+    </style>
 </head>
 <body>
 
@@ -77,55 +102,60 @@
     </p>
     <div class="projects-grid">
 
-      <a class="project-card reveal" href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" rel="noopener noreferrer">
-        <img src="images/avatar.png" alt="Project Avatar" class="project-img">
+      <div class="project-card reveal" data-link="https://fzlse.itch.io/pak-ustadz-adventure">
+        <img src="images/avatar.png" alt="Project Avatar" class="project-img" loading="lazy">
         <small>Unity • Platformer</small>
         <h3>Project Avatar</h3>
         <p data-lang-id="proj-avatar">
           Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti dan pengaturan mekanik permainan.
         </p>
-        <span data-lang-id="proj-detail">Lihat detail →</span>
-      </a>
+        <a class="project-external" href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
 
-      <a class="project-card reveal" href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer">
-        <img src="images/koper.png" alt="Koper Pulang" class="project-img">
+      <div class="project-card reveal" data-link="https://radenharza.itch.io/koper-pulang">
+        <img src="images/koper.png" alt="Koper Pulang" class="project-img" loading="lazy">
         <small>Unity • Puzzle</small>
         <h3>Koper Pulang</h3>
         <p data-lang-id="proj-koper">
           Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.
         </p>
-        <span data-lang-id="proj-detail">Lihat detail →</span>
-      </a>
+        <a class="project-external" href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
 
-      <a class="project-card reveal" href="https://radenharza.itch.io/beringin" target="_blank" rel="noopener noreferrer">
-        <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img">
+      <div class="project-card reveal" data-link="https://radenharza.itch.io/beringin">
+        <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img" loading="lazy">
         <small>Unity • Narrative</small>
         <h3>Ber-Ingin</h3>
         <p data-lang-id="proj-beringin">
           Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, quest, dan interaksi objek dinamis.
         </p>
-        <span data-lang-id="proj-detail">Lihat detail →</span>
-      </a>
+        <a class="project-external" href="https://radenharza.itch.io/beringin" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
 
-      <a class="project-card reveal" href="https://fzlse.itch.io/zera-venture" target="_blank" rel="noopener noreferrer">
-        <img src="images/zera.png" alt="Zera Venture" class="project-img">
+      <div class="project-card reveal" data-link="https://fzlse.itch.io/zera-venture">
+        <img src="images/zera.png" alt="Zera Venture" class="project-img" loading="lazy">
         <small>Unity • Idle Game</small>
         <h3>Zera Venture</h3>
         <p data-lang-id="proj-zera">
           Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan sebagai media untuk memahami alur ekonomi sederhana dalam game.
         </p>
-        <span data-lang-id="proj-detail">Lihat detail →</span>
-      </a>
+        <a class="project-external" href="https://fzlse.itch.io/zera-venture" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
 
-      <a class="project-card reveal" href="https://github.com/Syafiqqand/Biken" target="_blank" rel="noopener noreferrer">
-        <img src="images/bikend.png" alt="Bikend" class="project-img">
+      <div class="project-card reveal" data-link="https://github.com/Syafiqqand/Biken">
+        <img src="images/bikend.png" alt="Bikend" class="project-img" loading="lazy">
         <small>Unity • Turn Based Tactical • On-going</small>
         <h3>Bikend</h3>
         <p data-lang-id="proj-bikend">
           Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.
         </p>
-        <span data-lang-id="proj-detail">Lihat detail →</span>
-      </a>
+        <a class="project-external" href="https://github.com/Syafiqqand/Biken" target="_blank" rel="noopener noreferrer">Buka di GitHub</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
 
     </div>
   </section>
@@ -245,7 +275,63 @@
       document.documentElement.lang = currentLang;
     });
 
-    // project cards are now native <a> elements; no JS click handler needed
+    // project cards now use data-link and will open a modal with details
+    const projectCards = document.querySelectorAll('.project-card');
+    const modalOverlay = document.createElement('div');
+    modalOverlay.className = 'modal-overlay';
+    modalOverlay.innerHTML = `
+      <div class="modal" role="dialog" aria-modal="true">
+        <div class="modal-header">
+          <h3 id="modalTitle"></h3>
+          <button class="modal-close" aria-label="Close">✕</button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImg" src="" alt="" />
+          <div class="modal-meta">
+            <p id="modalDesc"></p>
+            <div id="modalStack"></div>
+            <a id="modalExternal" class="project-external-link" href="#" target="_blank" rel="noopener noreferrer">Buka</a>
+          </div>
+        </div>
+      </div>`;
+    document.body.appendChild(modalOverlay);
+
+    function openModal(data){
+      document.getElementById('modalTitle').textContent = data.title;
+      const img = document.getElementById('modalImg');
+      img.src = data.imgSrc;
+      img.alt = data.imgAlt || data.title + ' screenshot';
+      document.getElementById('modalDesc').innerHTML = data.desc;
+      document.getElementById('modalStack').textContent = data.stack || '';
+      const ext = document.getElementById('modalExternal');
+      ext.href = data.link;
+      ext.textContent = data.externalText || 'Buka di sumber';
+      modalOverlay.style.display = 'flex';
+      // trap focus minimally
+      modalOverlay.querySelector('.modal-close').focus();
+    }
+
+    function closeModal(){ modalOverlay.style.display = 'none'; }
+
+    modalOverlay.addEventListener('click', (e)=>{ if (e.target === modalOverlay) closeModal(); });
+    modalOverlay.querySelector('.modal-close').addEventListener('click', closeModal);
+
+    projectCards.forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        // if external link clicked, don't open modal
+        if (e.target.closest('a')) return;
+        const link = card.getAttribute('data-link');
+        const title = card.querySelector('h3')?.textContent || 'Project';
+        const img = card.querySelector('img')?.src || '';
+        const imgAlt = card.querySelector('img')?.alt || '';
+        const desc = card.querySelector('p')?.innerHTML || '';
+        openModal({ title, imgSrc: img, imgAlt, desc, link, externalText: 'Buka di tab baru' });
+      });
+      // keyboard accessibility
+      card.tabIndex = 0;
+      card.addEventListener('keydown', (e)=>{ if (e.key === 'Enter') card.click(); });
+    });
 
     // open Gmail compose when user clicks the Email link (prefill recipient)
     // Note: Browsers cannot programmatically "send" an email on behalf of the user
