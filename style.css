@@ -6,6 +6,12 @@
   --accent: #38bdf8;
   --muted: #94a3b8;
   --radius: 14px;
+
+  /* tambahan untuk modal */
+  --accent-color: #0b5fff;
+  --accent-hover: #084ed1;
+  --muted-text: #6b7280;
+  --body-text: #111827;
 }
 
 * {
@@ -247,6 +253,20 @@ section {
   margin-bottom: .6rem;
 }
 
+.section-subtitle {
+  font-size: 1.05rem;
+  margin-top: 1.4rem;
+  margin-bottom: .2rem;
+  font-weight: 600;
+}
+
+.small-note {
+  font-size: .78rem;
+  margin-top: 0;
+  margin-bottom: .6rem;
+  color: var(--muted);
+}
+
 .muted {
   color: var(--muted);
   font-size: .9rem;
@@ -337,6 +357,13 @@ section {
   text-transform: uppercase;
 }
 
+/* role text */
+.project-role {
+  font-size: .75rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .project-card h3 {
   margin: 0;
   font-size: 1rem;
@@ -356,6 +383,25 @@ section {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+/* badge kecil untuk penanda (misal Game Jam) */
+.project-badge {
+  align-self: flex-start;
+  background: rgba(56, 189, 248, 0.16);
+  border-radius: 999px;
+  padding: .18rem .6rem;
+  font-size: .7rem;
+  font-weight: 600;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  color: var(--accent);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+
+/* hidden detail list (untuk modal) */
+.project-detail {
+  display: none;
 }
 
 /* Scroll reveal default state */
@@ -415,4 +461,148 @@ footer {
     display: flex;
     gap: .6rem;
   }
+}
+
+/* grid khusus untuk section yang sedikit kartu (Game Jam & Ongoing) */
+.projects-grid-single {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-grid-single .project-card {
+  max-width: 320px;
+}
+
+/* ========================= */
+/* MODAL + GALLERY STYLES   */
+/* ========================= */
+
+/* overlay hitam transparan */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* container modal */
+.modal {
+  background:#fff;
+  width:min(900px,92%);
+  max-height:90vh;
+  overflow:auto;
+  border-radius:8px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header modal */
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+
+.modal-header h3{
+  margin:0;
+  color:var(--accent-color);
+  font-size:1.25rem;
+}
+
+.modal-close{
+  background:transparent;
+  border:0;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* body modal */
+.modal-body{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:12px;
+}
+
+.modal-meta{
+  flex:1;
+  min-width:200px;
+}
+
+#modalDesc{
+  color: var(--muted-text);
+  line-height:1.6;
+}
+
+/* tombol link utama di modal */
+.project-external-link{
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 12px;
+  background:var(--accent-color);
+  color:#fff;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.project-external-link:hover{
+  background:var(--accent-hover);
+}
+
+/* link kecil di card (sudah ada .project-card a, tapi ini untuk di teks modal kalau diperlukan) */
+.project-external{
+  color:var(--accent-color);
+  text-decoration:none;
+  font-weight:600;
+}
+
+.project-external:hover{
+  text-decoration:underline;
+}
+
+@media (max-width:600px){
+  .modal-body{flex-direction:column;}
+}
+
+/* gallery di dalam modal */
+.modal-image-wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.modal-image-wrap img{
+  width: 320px;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.modal-nav{
+  background: rgba(0,0,0,0.55);
+  border: 0;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-counter{
+  font-size: 0.8rem;
+  color: var(--muted-text);
+  margin-top: 4px;
 }
