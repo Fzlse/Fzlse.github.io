@@ -20,6 +20,7 @@
     </nav>
   </header>
 
+  <!-- #region HERO SECTION -->
   <section class="hero" id="top">
     <div class="hero-left">
       <div class="hero-tag" data-lang-id="hero-tag">Halo, saya Andra</div>
@@ -32,6 +33,7 @@
         <a href="#contact" class="btn-secondary" data-lang-id="btn-contact">Hubungi Saya</a>
       </div>
     </div>
+
     <div class="hero-card float-in">
       <h2 data-lang-id="skill-title">Keahlian Utama</h2>
       <div class="stat-list">
@@ -50,7 +52,9 @@
       </div>
     </div>
   </section>
+  <!-- #endregion HERO SECTION -->
 
+  <!-- #region ABOUT SECTION -->
   <section id="about">
     <div class="about fade-section">
       <h2 class="section-title" data-lang-id="about-title">Tentang Saya</h2>
@@ -69,135 +73,196 @@
       <span class="skill-pill">Git & GitHub</span>
     </div>
   </section>
+  <!-- #endregion ABOUT SECTION -->
 
+  <!-- #region PROJECTS SECTION -->
   <section id="projects">
     <h2 class="section-title" data-lang-id="projects-title">Proyek Saya</h2>
     <p class="muted" data-lang-id="projects-desc">
       Beberapa proyek berikut merupakan hasil pembelajaran dan eksplorasi saya dalam pengembangan game menggunakan Unity.
     </p>
 
-    <!-- PROYEK GAME JAM -->
+    <!-- #region Proyek Game Jam -->
     <h3 class="section-subtitle">Proyek Game Jam</h3>
     <p class="muted small-note">
       Proyek yang dikerjakan dalam waktu terbatas bersama tim, fokus pada ide dan eksekusi cepat.
     </p>
+
     <div class="projects-grid-single">
 
-      <!-- GAME JAM: Koper Pulang -->
+      <!-- #region GAME JAM: Koper Pulang -->
       <div class="project-card reveal"
            data-link="https://radenharza.itch.io/koper-pulang"
            data-images="images/koper.png">
+
         <span class="project-badge">Game Jam</span>
+
         <img src="images/koper.png" alt="Koper Pulang" class="project-img" loading="lazy">
         <small>Unity • Puzzle</small>
+
         <p class="project-role">Role: Gameplay & Interaction Programmer</p>
         <h3>Koper Pulang</h3>
+
         <p data-lang-id="proj-koper">
-          Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan, sistem snap grid, dan interaksi objek sebagai programmer gameplay utama.
+          Game puzzle interaktif di mana pemain mengambil dan menaruh barang ke dalam koper menggunakan sistem pickup & raycast. Saya mengembangkan logika pickup item dan sistem interaksi inti.
         </p>
-        <!-- detail kontribusi untuk modal -->
+
         <ul class="project-detail">
-          <li data-lang-id="koper-detail-1">Mengimplementasikan sistem raycast untuk memilih dan memindahkan item di dalam koper.</li>
-          <li data-lang-id="koper-detail-2">Mendesain dan mengkode sistem grid snapping agar penataan terasa rapi dan responsif.</li>
-          <li data-lang-id="koper-detail-3">Bekerja sama dengan tim desain untuk menyesuaikan feel interaksi drag &amp; drop.</li>
+          <li data-lang-id="koper-detail-1">Mengimplementasikan sistem pickup & raycast untuk memilih dan memindahkan item.</li>
+          <li data-lang-id="koper-detail-2">Mengatur logika penempatan item agar terasa natural dan responsif.</li>
+          <li data-lang-id="koper-detail-3">Menyempurnakan feedback visual & interaksi bersama tim desain.</li>
         </ul>
-        <a class="project-external" href="https://radenharza.itch.io/koper-pulang" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+
+        <a class="project-external" href="https://radenharza.itch.io/koper-pulang" target="_blank">Buka di itch.io</a>
         <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
       </div>
+      <!-- #endregion GAME JAM: Koper Pulang -->
 
-      <!-- GAME JAM: Ber-Ingin (Jam version) -->
+      <!-- #region GAME JAM: Ber-Ingin (Jam Version) -->
       <div class="project-card reveal"
            data-link="https://campur-studio.itch.io/beringin"
            data-images="images/beringin_demo.png">
+
         <span class="project-badge">Game Jam</span>
-        <img src="images/beringin_demo.png" alt="Ber-Ingin (Game Jam Version)" class="project-img" loading="lazy">
+
+        <img src="images/beringin_demo.png" alt="Ber-Ingin" class="project-img" loading="lazy">
         <small>Unity • Narrative</small>
+
         <p class="project-role">Role: Narrative & Interaction Systems Programmer</p>
         <h3>Ber-Ingin (Game Jam Version)</h3>
+
         <p data-lang-id="proj-beringin">
-          Game naratif 2D bergaya side-scrolling dengan gaya pixel art yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, trigger interaksi, dan alur quest sederhana untuk mendukung penyampaian cerita.
+          Game naratif side-scrolling dengan fokus pada dialog & interaksi. Saya membuat sistem dialog, trigger event, dan flow quest sederhana.
         </p>
+
         <ul class="project-detail">
-          <li data-lang-id="beringinjam-detail-1">Membuat sistem dialog berbasis trigger untuk memicu percakapan di titik-titik tertentu.</li>
-          <li data-lang-id="beringinjam-detail-2">Mengatur interaksi objek lingkungan (NPC, objek penting) yang terkait dengan alur cerita.</li>
-          <li data-lang-id="beringinjam-detail-3">Berkoordinasi dengan penulis cerita untuk menjaga pacing dan flow naratif.</li>
+          <li data-lang-id="beringinjam-detail-1">Membuat sistem dialog berbasis trigger.</li>
+          <li data-lang-id="beringinjam-detail-2">Mengatur interaksi NPC & objek cerita.</li>
+          <li data-lang-id="beringinjam-detail-3">Menjaga pacing & alur naratif bersama tim.</li>
         </ul>
-        <a class="project-external" href="https://campur-studio.itch.io/beringin" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
+
+        <a class="project-external" href="https://campur-studio.itch.io/beringin" target="_blank">Buka di itch.io</a>
         <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
       </div>
+      <!-- #endregion GAME JAM: Ber-Ingin (Jam Version) -->
+
+      <!-- #region GAME JAM: Way of Life -->
+      <div class="project-card reveal"
+           data-link="https://muhammadandraramadhani.itch.io/wof"
+           data-images="images/Way-Of-Life.png">
+
+        <span class="project-badge">Game Jam</span>
+
+        <img src="images/Way-Of-Life.png" alt="Way of Life" class="project-img" loading="lazy">
+        <small>Unity • Exploration</small>
+
+        <p class="project-role">Role: Gameplay Programmer</p>
+        <h3>Way of Life</h3>
+
+        <p data-lang-id="proj-wayoflife">
+          Game eksplorasi atmosferis yang dibuat untuk game jam. Saya mengembangkan sistem power up & sound manager yang mendukung suasana permainan.
+        </p>
+
+        <ul class="project-detail">
+          <li data-lang-id="wayoflife-detail-1">Membangun sistem item power up yang memberi efek pada pemain.</li>
+          <li data-lang-id="wayoflife-detail-2">Mengembangkan sound manager untuk mengatur BGM & SFX.</li>
+          <li data-lang-id="wayoflife-detail-3">Menyesuaikan perubahan audio dengan momen penting gameplay.</li>
+        </ul>
+
+        <a class="project-external" href="#" target="https://muhammadandraramadhani.itch.io/wof">Buka di itch.io</a>
+        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+      </div>
+      <!-- #endregion GAME JAM: Way of Life -->
 
     </div>
-
-    <!-- PROYEK KULIAH & EKSPLORASI -->
+    <!-- #endregion Proyek Game Jam -->
+    <!-- #region Proyek Kuliah & Eksplorasi -->
     <h3 class="section-subtitle">Proyek Kuliah & Eksplorasi Pribadi</h3>
     <p class="muted small-note">
       Proyek yang saya kerjakan sebagai tugas kuliah maupun latihan mandiri untuk memperdalam pemahaman teknis.
     </p>
+
     <div class="projects-grid">
 
-      <!-- Project Avatar -->
+      <!-- #region Project Avatar -->
       <div class="project-card reveal"
            data-link="https://fzlse.itch.io/pak-ustadz-adventure"
            data-images="images/avatar.png">
+
         <img src="images/avatar.png" alt="Project Avatar" class="project-img" loading="lazy">
         <small>Unity • Platformer</small>
+
         <p class="project-role">Role: Core Gameplay & Systems Programmer</p>
         <h3>Project Avatar</h3>
-        <p data-lang-id="proj-avatar">
-          Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti, pengaturan mekanik permainan, serta integrasi skor dan leaderboard sederhana.
-        </p>
-        <ul class="project-detail">
-          <li data-lang-id="avatar-detail-1">Mengembangkan controller karakter (movement, jump, dash, dan shooting).</li>
-          <li data-lang-id="avatar-detail-2">Mendesain sistem skor dan integrasi leaderboard lokal untuk menyimpan skor tertinggi.</li>
-          <li data-lang-id="avatar-detail-3">Mengatur struktur scene dan alur permainan (game over, restart, dan UI dasar).</li>
-        </ul>
-        <a class="project-external" href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
-        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
-      </div>
 
-      <!-- Ber-Ingin (Kuliah/Narrative project) -->
+        <p data-lang-id="proj-avatar">
+          Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya mengerjakan sistem inti seperti controller, mekanik, dan skor.
+        </p>
+
+        <ul class="project-detail">
+          <li data-lang-id="avatar-detail-1">Membangun controller (movement, jump, dash, shooting).</li>
+          <li data-lang-id="avatar-detail-2">Mengembangkan sistem skor & leaderboard.</li>
+          <li data-lang-id="avatar-detail-3">Mengatur struktur scene & flow permainan.</li>
+        </ul>
+
+        <a class="project-external" href="https://fzlse.itch.io/pak-ustadz-adventure" target="_blank">Buka di itch.io</a>
+      </div>
+      <!-- #endregion Project Avatar -->
+
+      <!-- #region Ber-Ingin (Project Kuliah) -->
       <div class="project-card reveal"
            data-link="https://radenharza.itch.io/beringin"
            data-images="images/beringin.jpg">
+
         <img src="images/beringin.jpg" alt="Ber-Ingin" class="project-img" loading="lazy">
         <small>Unity • Narrative</small>
+
         <p class="project-role">Role: Narrative & Interaction Systems Programmer</p>
         <h3>Ber-Ingin</h3>
-        <p data-lang-id="proj-beringin">
-          Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, trigger interaksi, dan alur quest sederhana untuk mendukung penyampaian cerita.
-        </p>
-        <ul class="project-detail">
-          <li data-lang-id="beringin-detail-1">Membuat sistem percabangan dialog sederhana untuk beberapa kondisi cerita.</li>
-          <li data-lang-id="beringin-detail-2">Menghubungkan state quest dengan interaksi pemain dan progress cerita.</li>
-          <li data-lang-id="beringin-detail-3">Mengatur transisi antar scene/area yang relevan dengan perkembangan naratif.</li>
-        </ul>
-        <a class="project-external" href="https://radenharza.itch.io/beringin" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
-        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
-      </div>
 
-      <!-- Zera Venture -->
+        <p data-lang-id="proj-beringin">
+          Game naratif 2D bergaya side-scrolling dengan fokus pada dialog dan interaksi karakter.
+        </p>
+
+        <ul class="project-detail">
+          <li data-lang-id="beringin-detail-1">Membuat sistem percabangan dialog sederhana.</li>
+          <li data-lang-id="beringin-detail-2">Menghubungkan quest state dengan interaksi pemain.</li>
+          <li data-lang-id="beringin-detail-3">Mengatur transisi scene sesuai perkembangan cerita.</li>
+        </ul>
+
+        <a class="project-external" href="https://radenharza.itch.io/beringin" target="_blank">Buka di itch.io</a>
+      </div>
+      <!-- #endregion Ber-Ingin (Project Kuliah) -->
+
+      <!-- #region Zera Venture -->
       <div class="project-card reveal"
            data-link="https://fzlse.itch.io/zera-venture"
            data-images="images/zera.png">
+
         <img src="images/zera.png" alt="Zera Venture" class="project-img" loading="lazy">
         <small>Unity • Idle Game</small>
+
         <p class="project-role">Role: Systems & Economy Programmer</p>
         <h3>Zera Venture</h3>
+
         <p data-lang-id="proj-zera">
-          Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan untuk memahami alur ekonomi sederhana dalam game, sistem upgrade, dan loop progres yang bertahap.
+          Game idle bertema mahasiswa IT membangun studio game. Fokus pada sistem ekonomi & progres.
         </p>
+
         <ul class="project-detail">
-          <li data-lang-id="zera-detail-1">Mendesain loop ekonomi dasar (income, upgrade, dan progres pasif).</li>
-          <li data-lang-id="zera-detail-2">Mengimplementasikan sistem upgrade bertahap yang mempengaruhi income pemain.</li>
-          <li data-lang-id="zera-detail-3">Menguji balancing awal untuk memastikan progres terasa bertahap namun tidak terlalu lambat.</li>
+          <li data-lang-id="zera-detail-1">Mendesain loop ekonomi dasar (income & upgrade).</li>
+          <li data-lang-id="zera-detail-2">Mengimplementasikan sistem upgrade bertingkat.</li>
+          <li data-lang-id="zera-detail-3">Balancing awal untuk progres pemain.</li>
         </ul>
-        <a class="project-external" href="https://fzlse.itch.io/zera-venture" target="_blank" rel="noopener noreferrer">Buka di itch.io</a>
-        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+
+        <a class="project-external" href="https://fzlse.itch.io/zera-venture" target="_blank">Buka di itch.io</a>
       </div>
+      <!-- #endregion Zera Venture -->
 
     </div>
+    <!-- #endregion Proyek Kuliah & Eksplorasi -->
 
-    <!-- ONGOING PROJECT -->
+    <!-- #region Ongoing Project -->
     <h3 class="section-subtitle">Ongoing Project</h3>
     <p class="muted small-note">
       Proyek yang masih dalam tahap pengembangan dan terus diperbarui.
@@ -205,29 +270,36 @@
 
     <div class="projects-grid-single">
 
+      <!-- #region Bikend -->
       <div class="project-card reveal"
            data-link="https://github.com/Syafiqqand/Biken"
            data-images="images/bikend.png">
+
         <img src="images/bikend.png" alt="Bikend" class="project-img" loading="lazy">
-        <small>Unity • Turn Based Tactical • On-going</small>
-        <p class="project-role">Role: AI Programmer (Combat & Enemy AI)</p>
+        <small>Unity • Tactical RPG • On-going</small>
+
+        <p class="project-role">Role: AI & Systems Programmer</p>
         <h3>Bikend</h3>
+
         <p data-lang-id="proj-bikend">
-          Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan, logika turn-based, dan integrasi Behavior Tree untuk AI musuh.
+          Game strategi berbasis giliran dengan penekanan pada posisi unit & keputusan taktis.
         </p>
+
         <ul class="project-detail">
-          <li data-lang-id="bikend-detail-1">Mengimplementasikan sistem turn-based (player turn vs enemy turn) yang konsisten.</li>
-          <li data-lang-id="bikend-detail-2">Membangun AI musuh menggunakan pendekatan Behavior Tree untuk pergerakan dan penyerangan.</li>
-          <li data-lang-id="bikend-detail-3">Bekerja bersama tim untuk menguji balancing awal dan flow pertempuran.</li>
+          <li data-lang-id="bikend-detail-1">Membangun sistem turn-based (Player Turn ⇄ Enemy Turn).</li>
+          <li data-lang-id="bikend-detail-2">Mengembangkan AI sederhana berbasis decision logic.</li>
+          <li data-lang-id="bikend-detail-3">Mengembangkan grid, controller pemain, dan AI prototype.</li>
         </ul>
-        <a class="project-external" href="https://github.com/Syafiqqand/Biken" target="_blank" rel="noopener noreferrer">Buka di GitHub</a>
-        <span class="sr-only" data-lang-id="proj-detail">Lihat detail →</span>
+
+        <a class="project-external" href="https://github.com/Syafiqqand/Biken" target="_blank">Buka di GitHub</a>
       </div>
+      <!-- #endregion Bikend -->
 
     </div>
-
+    <!-- #endregion Ongoing Project -->
   </section>
-
+  <!-- #endregion PROJECTS SECTION -->
+  <!-- #region CONTACT SECTION -->
   <section id="contact">
     <div class="contact-box fade-section">
       <h2 class="section-title" data-lang-id="contact-title">Kontak & Media Sosial</h2>
@@ -240,13 +312,15 @@
       </div>
     </div>
   </section>
+  <!-- #endregion CONTACT SECTION -->
 
   <footer>
     © 2025 Muhammad Andra Ramadhani. All rights reserved.
   </footer>
 
+  <!-- #region JAVASCRIPT GLOBAL -->
   <script>
-    // scroll reveal sederhana
+    // #region SCROLL REVEAL
     const reveals = document.querySelectorAll('.reveal, .fade-section');
     const onScroll = () => {
       const trigger = window.innerHeight * 0.85;
@@ -257,12 +331,14 @@
     };
     document.addEventListener('scroll', onScroll);
     onScroll();
+    // #endregion SCROLL REVEAL
 
-    // toggle bahasa
+    // #region LANGUAGE TOGGLE
     const langToggle = document.getElementById('langToggle');
     let currentLang = 'id';
 
     const langMap = {
+      // #region BAHASA INDONESIA
       id: {
         "site-title": "Portofolio Muhammad Andra Ramadhani",
         "nav-about": "Tentang",
@@ -284,35 +360,48 @@
         "skilltools-desc": "Berikut beberapa teknologi dan alat yang sering saya gunakan dalam pengembangan game:",
         "projects-title": "Proyek Saya",
         "projects-desc": "Beberapa proyek berikut merupakan hasil pembelajaran dan eksplorasi saya dalam pengembangan game menggunakan Unity.",
-        "proj-avatar": "Game 2D bertema endless runner dengan mekanik lompat, dash, dan tembak. Saya bertanggung jawab dalam pengembangan sistem inti dan pengaturan mekanik permainan.",
-        "proj-koper": "Game puzzle interaktif di mana pemain menata barang ke dalam koper menggunakan sistem raycast dan grid. Saya mengimplementasikan sistem penataan serta interaksi objek.",
-        "proj-beringin": "Game naratif 2D bergaya side-scrolling yang berfokus pada cerita dan interaksi karakter. Saya mengembangkan sistem dialog, quest, dan interaksi objek dinamis.",
-        "proj-zera": "Game idle tycoon sederhana bertema mahasiswa IT yang membangun studio game. Proyek ini saya gunakan sebagai media untuk memahami alur ekonomi sederhana dalam game.",
-        "proj-bikend": "Game strategi berbasis giliran yang menekankan pengaturan unit dan manajemen sumber daya. Saya berperan sebagai programmer utama untuk sistem pertarungan dan logika permainan.",
+        
+        /* Game Jam */
+        "proj-koper": "Game puzzle interaktif di mana pemain mengambil dan menaruh barang ke dalam koper menggunakan sistem pickup dan interaksi objek. Saya mengembangkan logika pickup item dan sistem interaksi inti.",
+        "koper-detail-1": "Mengimplementasikan sistem pickup & raycast untuk memilih dan memindahkan item.",
+        "koper-detail-2": "Mengatur logika penempatan agar responsif dan natural.",
+        "koper-detail-3": "Menyempurnakan feedback visual dan interaksi bersama tim desain.",
+
+        "proj-beringin": "Game naratif 2D side-scrolling yang fokus pada interaksi dan dialog. Saya membangun sistem dialog, trigger interaksi, dan alur quest sederhana.",
+        "beringinjam-detail-1": "Membangun sistem dialog berbasis trigger.",
+        "beringinjam-detail-2": "Mengatur interaksi NPC dan objek cerita.",
+        "beringinjam-detail-3": "Menjaga pacing cerita bersama tim.",
+
+        "proj-wayoflife": "Game eksplorasi atmosferis yang dibuat untuk game jam. Saya mengembangkan sistem item power up dan sound manager.",
+        "wayoflife-detail-1": "Membuat sistem power up yang mempengaruhi pemain.",
+        "wayoflife-detail-2": "Mengembangkan sound manager (BGM & SFX).",
+        "wayoflife-detail-3": "Menyesuaikan perubahan audio dengan momen gameplay.",
+
+        /* Project Avatar */
+        "proj-avatar": "Game 2D endless runner dengan movement, dash, dan shooting. Saya membuat controller dan sistem skor.",
+        "avatar-detail-1": "Membangun controller (movement, jump, dash, shooting).",
+        "avatar-detail-2": "Mengembangkan skor dan leaderboard lokal.",
+        "avatar-detail-3": "Mengatur flow scene dan gameplay.",
+
+        /* Zera Venture */
+        "proj-zera": "Game idle tentang membangun studio game. Fokus pada sistem ekonomi sederhana dan upgrade.",
+        "zera-detail-1": "Mendesain loop ekonomi dasar.",
+        "zera-detail-2": "Mengimplementasikan sistem upgrade.",
+        "zera-detail-3": "Balancing untuk progres pemain.",
+
+        /* Bikend */
+        "proj-bikend": "Game strategi turn-based dengan pengaturan posisi unit dan sistem taktis.",
+        "bikend-detail-1": "Membangun sistem turn-based.",
+        "bikend-detail-2": "Mengembangkan AI sederhana (decision-based).",
+        "bikend-detail-3": "Membangun grid, FSM player, dan AI awal.",
+
         "proj-detail": "Lihat detail →",
         "contact-title": "Kontak & Media Sosial",
-        "contact-desc": "Silakan hubungi saya melalui salah satu kanal berikut:",
-
-        /* Detail kontribusi (ID) */
-        "koper-detail-1": "Mengimplementasikan sistem raycast untuk memilih dan memindahkan item di dalam koper.",
-        "koper-detail-2": "Mendesain dan mengkode sistem grid snapping agar penataan terasa rapi dan responsif.",
-        "koper-detail-3": "Bekerja sama dengan tim desain untuk menyesuaikan feel interaksi drag &amp; drop.",
-        "beringinjam-detail-1": "Membuat sistem dialog berbasis trigger untuk memicu percakapan di titik-titik tertentu.",
-        "beringinjam-detail-2": "Mengatur interaksi objek lingkungan (NPC, objek penting) yang terkait dengan alur cerita.",
-        "beringinjam-detail-3": "Berkoordinasi dengan penulis cerita untuk menjaga pacing dan flow naratif.",
-        "avatar-detail-1": "Mengembangkan controller karakter (movement, jump, dash, dan shooting).",
-        "avatar-detail-2": "Mendesain sistem skor dan integrasi leaderboard lokal untuk menyimpan skor tertinggi.",
-        "avatar-detail-3": "Mengatur struktur scene dan alur permainan (game over, restart, dan UI dasar).",
-        "beringin-detail-1": "Membuat sistem percabangan dialog sederhana untuk beberapa kondisi cerita.",
-        "beringin-detail-2": "Menghubungkan state quest dengan interaksi pemain dan progress cerita.",
-        "beringin-detail-3": "Mengatur transisi antar scene/area yang relevan dengan perkembangan naratif.",
-        "zera-detail-1": "Mendesain loop ekonomi dasar (income, upgrade, dan progres pasif).",
-        "zera-detail-2": "Mengimplementasikan sistem upgrade bertahap yang mempengaruhi income pemain.",
-        "zera-detail-3": "Menguji balancing awal untuk memastikan progres terasa bertahap namun tidak terlalu lambat.",
-        "bikend-detail-1": "Mengimplementasikan sistem turn-based (player turn vs enemy turn) yang konsisten.",
-        "bikend-detail-2": "Membangun AI musuh menggunakan pendekatan Behavior Tree untuk pergerakan dan penyerangan.",
-        "bikend-detail-3": "Bekerja bersama tim untuk menguji balancing awal dan flow pertempuran."
+        "contact-desc": "Silakan hubungi saya melalui salah satu kanal berikut:"
       },
+      // #endregion BAHASA INDONESIA
+
+      // #region ENGLISH
       en: {
         "site-title": "Portfolio of Muhammad Andra Ramadhani",
         "nav-about": "About",
@@ -320,7 +409,7 @@
         "nav-contact": "Contact",
         "hero-tag": "Hi, I'm Andra",
         "hero-title": "Game Programmer & Game Technology Student",
-        "hero-desc": "I focus on game development using Unity and C#, with a strong interest in gameplay systems, interactive mechanics, and performance optimization.",
+        "hero-desc": "I focus on game development using Unity and C#, with strong interest in gameplay systems, interactive mechanics, and performance optimization.",
         "btn-projects": "View Projects",
         "btn-contact": "Contact Me",
         "skill-title": "Core Skills",
@@ -329,81 +418,94 @@
         "skill-2-value": "Game Programmer",
         "skill-3-label": "Languages",
         "about-title": "About Me",
-        "about-desc": "My name is <strong>Muhammad Andra Ramadhani</strong>, a Game Technology student specializing as a <em>Game Programmer</em>. I have a strong interest in building gameplay systems, simple AI, and data integration using Unity and C#. I also actively work on collaborative projects to gain more experience in professional game development.",
+        "about-desc": "My name is <strong>Muhammad Andra Ramadhani</strong>, a Game Technology student specializing as a <em>Game Programmer</em>. I enjoy designing gameplay systems, simple AI, and data integration in Unity using C#.",
         "skilltools-title": "Skills & Tools",
-        "skilltools-desc": "Here are several technologies and tools I frequently use in game development:",
+        "skilltools-desc": "Here are several technologies and tools I frequently use:",
         "projects-title": "My Projects",
-        "projects-desc": "The projects below represent a mix of coursework and personal experiments as I learn and explore game development with Unity.",
-        "proj-avatar": "A 2D endless-runner/platformer with jump, dash, and shooting mechanics. I handled the core gameplay systems, player controller, and a simple score and leaderboard integration.",
-        "proj-koper": "An interactive suitcase-packing puzzle created for a game jam. Players arrange items inside a suitcase using raycast and grid-based snapping. I implemented the placement system, snapping logic, and core object interactions as the main gameplay programmer.",
-        "proj-beringin": "A 2D narrative side-scrolling game focused on story and character interactions. I worked on the dialogue system, interaction triggers, and a simple quest flow to support the narrative.",
-        "proj-zera": "A simple idle-tycoon game about an IT student building a game studio. I used this project to explore basic in-game economy loops, upgrade systems, and gradual player progression.",
-        "proj-bikend": "A turn-based tactical game that emphasizes unit positioning and resource planning. I serve as the main programmer for the turn system, combat logic, and enemy AI using a behavior-tree approach.",
+        "projects-desc": "These projects represent my exploration and learning journey in game development using Unity.",
+
+        /* Game Jam */
+        "proj-koper": "A suitcase-puzzle game made for a game jam. Players pick up and place items using a custom pickup and interaction system. I developed the pickup logic and core suitcase interaction.",
+        "koper-detail-1": "Implemented pickup & raycast logic for movable items.",
+        "koper-detail-2": "Handled item placement so it feels responsive and natural.",
+        "koper-detail-3": "Refined interaction and visual feedback with the design team.",
+
+        "proj-beringin": "A narrative 2D side-scrolling game focused on interaction and dialogue.",
+        "beringinjam-detail-1": "Created trigger-based dialogue system.",
+        "beringinjam-detail-2": "Handled NPC and story-object interactions.",
+        "beringinjam-detail-3": "Maintained pacing with the narrative team.",
+
+        "proj-wayoflife": "An atmospheric exploration game made for a game jam. I developed the power-up system and sound manager.",
+        "wayoflife-detail-1": "Implemented power-up system that affects the player.",
+        "wayoflife-detail-2": "Developed sound manager for BGM & SFX.",
+        "wayoflife-detail-3": "Synced audio changes with gameplay moments.",
+
+        /* Project Avatar */
+        "proj-avatar": "A 2D endless runner with jump, dash, and shooting mechanics.",
+        "avatar-detail-1": "Developed the controller (movement, dash, shooting).",
+        "avatar-detail-2": "Built score & local leaderboard.",
+        "avatar-detail-3": "Managed game flow and scenes.",
+
+        /* Zera Venture */
+        "proj-zera": "A small idle game about building a game studio.",
+        "zera-detail-1": "Designed basic economy loop.",
+        "zera-detail-2": "Implemented upgrade system.",
+        "zera-detail-3": "Performed early balancing.",
+
+        /* Bikend */
+        "proj-bikend": "A turn-based tactical game focusing on unit positioning.",
+        "bikend-detail-1": "Built the turn-based structure.",
+        "bikend-detail-2": "Developed simple decision-based AI.",
+        "bikend-detail-3": "Created grid, FSM player, and AI prototype.",
+
         "proj-detail": "View details →",
         "contact-title": "Contact & Socials",
-        "contact-desc": "You can reach me through any of the channels below:",
-
-        /* Detail kontribusi (EN) */
-        "koper-detail-1": "Implemented the raycast system to select and move items inside the suitcase.",
-        "koper-detail-2": "Designed and coded the grid-snapping system so placements feel neat and responsive.",
-        "koper-detail-3": "Collaborated with the design team to fine-tune the drag &amp; drop interaction feel.",
-        "beringinjam-detail-1": "Built a trigger-based dialogue system to start conversations at specific points.",
-        "beringinjam-detail-2": "Set up interactions with environment objects (NPCs and key props) tied to the story flow.",
-        "beringinjam-detail-3": "Coordinated with the writer to keep pacing and narrative flow consistent.",
-        "avatar-detail-1": "Developed the character controller (movement, jump, dash, and shooting).",
-        "avatar-detail-2": "Designed the scoring system and local leaderboard integration to store high scores.",
-        "avatar-detail-3": "Organized scene structure and game flow (game over, restart, and basic UI).",
-        "beringin-detail-1": "Created a simple branching dialogue system for different story conditions.",
-        "beringin-detail-2": "Linked quest state with player interactions and story progression.",
-        "beringin-detail-3": "Managed transitions between scenes/areas that reflect narrative progression.",
-        "zera-detail-1": "Designed the basic economy loop (income, upgrades, and passive progress).",
-        "zera-detail-2": "Implemented a step-by-step upgrade system that affects the player's income.",
-        "zera-detail-3": "Performed early balancing tests so progression feels gradual but not too slow.",
-        "bikend-detail-1": "Implemented a consistent turn-based system (player turns versus enemy turns).",
-        "bikend-detail-2": "Built enemy AI using a behavior-tree approach for movement and attacking decisions.",
-        "bikend-detail-3": "Collaborated with the team to test early balancing and overall combat flow."
+        "contact-desc": "Feel free to reach me through any of the following platforms:"
       }
+      // #endregion ENGLISH
     };
 
-    function applyLang(lang) {
+    // APPLY LANGUAGE
+    function applyLang(lang) { // #region APPLY LANGUAGE
       const elements = document.querySelectorAll('[data-lang-id]');
       elements.forEach(el => {
         const key = el.getAttribute('data-lang-id');
-        const str = langMap[lang][key];
-        if (str !== undefined) {
-          el.innerHTML = str;
+        if (langMap[lang][key] !== undefined) {
+          el.innerHTML = langMap[lang][key];
         }
       });
-    }
+    } // #endregion APPLY LANGUAGE
 
+    // #region TOGGLE BUTTON
     langToggle.addEventListener('click', () => {
       currentLang = currentLang === 'id' ? 'en' : 'id';
       applyLang(currentLang);
       langToggle.textContent = currentLang === 'id' ? 'EN' : 'ID';
-      document.documentElement.lang = currentLang;
     });
+    // #endregion TOGGLE BUTTON
 
-    // project cards + modal with gallery
+    // #region PROJECT CARD MODAL & GALLERY
     const projectCards = document.querySelectorAll('.project-card');
+
     const modalOverlay = document.createElement('div');
     modalOverlay.className = 'modal-overlay';
     modalOverlay.innerHTML = `
-      <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal" role="dialog">
         <div class="modal-header">
           <h3 id="modalTitle"></h3>
           <button class="modal-close" aria-label="Close">✕</button>
         </div>
         <div class="modal-body">
           <div class="modal-image-wrap">
-            <button class="modal-nav modal-prev" aria-label="Previous screenshot">‹</button>
+            <button class="modal-nav modal-prev">‹</button>
             <img id="modalImg" src="" alt="" />
-            <button class="modal-nav modal-next" aria-label="Next screenshot">›</button>
+            <button class="modal-nav modal-next">›</button>
           </div>
           <div class="modal-meta">
             <p id="modalDesc"></p>
             <div id="modalStack"></div>
-            <div id="modalCounter" class="modal-counter"></div>
-            <a id="modalExternal" class="project-external-link" href="#" target="_blank" rel="noopener noreferrer">Buka</a>
+            <div id="modalCounter"></div>
+            <a id="modalExternal" class="project-external-link" href="#" target="_blank">Open</a>
           </div>
         </div>
       </div>`;
@@ -414,125 +516,81 @@
 
     function updateModalImage() {
       const imgEl = document.getElementById('modalImg');
-      const counterEl = document.getElementById('modalCounter');
-
-      if (!galleryImages.length) {
-        imgEl.style.display = 'none';
-        if (counterEl) counterEl.textContent = '';
-        return;
-      }
-
-      imgEl.style.display = '';
       imgEl.src = galleryImages[galleryIndex];
-      if (counterEl) {
-        counterEl.textContent = (galleryIndex + 1) + ' / ' + galleryImages.length;
-      }
+      document.getElementById('modalCounter').textContent =
+        (galleryIndex + 1) + ' / ' + galleryImages.length;
     }
 
-    function openModal(data){
+    function openModal(data) {
       document.getElementById('modalTitle').textContent = data.title;
-      const img = document.getElementById('modalImg');
-      img.alt = data.imgAlt || data.title + ' screenshot';
-
-      galleryImages = data.images && data.images.length ? data.images : (data.imgSrc ? [data.imgSrc] : []);
+      galleryImages = data.images;
       galleryIndex = 0;
       updateModalImage();
-
       document.getElementById('modalDesc').innerHTML = data.desc;
-      document.getElementById('modalStack').textContent = data.stack || '';
-      const ext = document.getElementById('modalExternal');
-      ext.href = data.link;
-      ext.textContent = data.externalText || 'Buka di sumber';
+      document.getElementById('modalExternal').href = data.link;
       modalOverlay.style.display = 'flex';
-      modalOverlay.querySelector('.modal-close').focus();
     }
 
-    function closeModal(){ modalOverlay.style.display = 'none'; }
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) modalOverlay.style.display = 'none';
+    });
+    modalOverlay.querySelector('.modal-close').addEventListener('click', () => {
+      modalOverlay.style.display = 'none';
+    });
 
-    modalOverlay.addEventListener('click', (e)=>{ if (e.target === modalOverlay) closeModal(); });
-    modalOverlay.querySelector('.modal-close').addEventListener('click', closeModal);
-
-    const prevBtn = modalOverlay.querySelector('.modal-prev');
-    const nextBtn = modalOverlay.querySelector('.modal-next');
-
-    prevBtn.addEventListener('click', () => {
-      if (!galleryImages.length) return;
+    modalOverlay.querySelector('.modal-prev').addEventListener('click', () => {
       galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length;
       updateModalImage();
     });
 
-    nextBtn.addEventListener('click', () => {
-      if (!galleryImages.length) return;
+    modalOverlay.querySelector('.modal-next').addEventListener('click', () => {
       galleryIndex = (galleryIndex + 1) % galleryImages.length;
       updateModalImage();
     });
 
     projectCards.forEach(card => {
-      card.style.cursor = 'pointer';
       card.addEventListener('click', (e) => {
         if (e.target.closest('a')) return;
 
         const link = card.getAttribute('data-link');
-        const title = card.querySelector('h3')?.textContent || 'Project';
+        const title = card.querySelector('h3')?.textContent.trim();
+
         const imgEl = card.querySelector('img');
-        const firstImgSrc = imgEl ? imgEl.src : '';
-        const imgAlt = imgEl ? imgEl.alt : '';
-
-        // deskripsi pendek (yang pakai data-lang-id)
-        const shortDesc = card.querySelector('p[data-lang-id]')?.innerHTML || '';
-
-        // detail kontribusi (ul.project-detail)
-        const detailList = card.querySelector('.project-detail');
-        let fullDesc = shortDesc;
-        if (detailList) {
-          const contribTitle = currentLang === 'id' ? 'Kontribusi utama:' : 'Key contributions:';
-          fullDesc += '<hr><strong>' + contribTitle + '</strong><ul>' + detailList.innerHTML + '</ul>';
-        }
-
-        // list screenshot dari data-images
+        const firstImgSrc = imgEl.src;
         const imagesAttr = card.getAttribute('data-images');
-        let images = [];
-        if (imagesAttr) {
-          images = imagesAttr.split(',').map(s => s.trim()).filter(Boolean);
-        }
-        if (!images.length && firstImgSrc) {
-          images = [firstImgSrc];
+        const images = imagesAttr ? imagesAttr.split(',') : [firstImgSrc];
+
+        const descP = card.querySelector('p[data-lang-id]');
+        const desc = descP ? descP.innerHTML : "";
+
+        const detailList = card.querySelector('.project-detail');
+        let detailHTML = "";
+        if (detailList) {
+          detailHTML = "<ul>" + detailList.innerHTML + "</ul>";
         }
 
         openModal({
           title,
-          imgSrc: firstImgSrc,
-          imgAlt,
-          desc: fullDesc,
-          link,
           images,
-          externalText: currentLang === 'id' ? 'Buka di tab baru' : 'Open in new tab'
+          desc: desc + "<hr>" + detailHTML,
+          link
         });
       });
-
-      card.tabIndex = 0;
-      card.addEventListener('keydown', (e)=>{ if (e.key === 'Enter') card.click(); });
     });
+    // #endregion PROJECT CARD MODAL & GALLERY
 
-    // open Gmail compose when user clicks the Email link (prefill recipient)
+    // #region EMAIL LINK
     const emailLink = document.getElementById('emailLink');
     if (emailLink) {
       emailLink.addEventListener('click', (e) => {
         e.preventDefault();
-
-        const to = 'andratml3@gmail.com';
-        const subject = '';
-        const body = '';
-
-        const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1'
-          + '&to=' + encodeURIComponent(to)
-          + '&su=' + encodeURIComponent(subject)
-          + '&body=' + encodeURIComponent(body);
-
-        window.open(gmailUrl, '_blank', 'noopener');
+        const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=andratml3@gmail.com";
+        window.open(gmailUrl, "_blank", "noopener");
       });
     }
+    // #endregion EMAIL LINK
   </script>
+  <!-- #endregion JAVASCRIPT GLOBAL -->
 
 </body>
 </html>
